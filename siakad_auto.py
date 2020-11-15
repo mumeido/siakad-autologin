@@ -4,7 +4,8 @@ from getpass import getpass
 NIM = input("Masukkan NIM anda : ")
 password = getpass("Masukkan password anda : ")
 
-driver = webdriver.Chrome("C:\\python\\chromedriver.exe")
+# your chromedriver.exe path
+driver = webdriver.Chrome("chromedriver path")
 driver.get("http://siakad.usahidsolo.ac.id/gate/index.php")
 
 NIM_textbox = driver.find_element_by_id("userid")
